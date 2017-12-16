@@ -2,6 +2,8 @@ function getIt() {
   $("p").on("click", () => alert("Hey!"));
 }
 
+// Note: If you use '$(this)' with an arrow-function callback,
+// it will refer to the Window, not the event.target
 function frameIt() {
   $("img").on("load", function() {
     $(this).addClass("tasty");
