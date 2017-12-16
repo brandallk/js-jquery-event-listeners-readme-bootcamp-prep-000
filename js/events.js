@@ -16,7 +16,9 @@ function pressIt() {
   });
 }
 
-
+function submitIt() {
+  $("form").on("submit", () => alert());
+}
 
 $(document).ready(function(){
 
