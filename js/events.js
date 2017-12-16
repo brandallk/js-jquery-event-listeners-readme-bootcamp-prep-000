@@ -9,7 +9,11 @@ function frameIt() {
 }
 
 function pressIt() {
-  $("form input").on("keydown")
+  $("form input#typing").on("keydown", (event) => {
+    if (event.which === 71) {
+      alert()
+    }
+  });
 }
 
 $(document).ready(function(){
